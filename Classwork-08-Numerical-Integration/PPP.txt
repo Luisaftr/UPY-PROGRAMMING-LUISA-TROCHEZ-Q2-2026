@@ -1,0 +1,43 @@
+#PROGRAM LUISATROCHEZ CLASSWORK08
+#INPUT
+Get a from user   ← left endpoint of interval
+Get b from user   ← right endpoint of interval
+Get f(x) from user  ← function as a string expression
+Get method from user  ← LRM / RRM / MPM / TM
+#PROCESS
+If a >= b then
+    Display "Error: a must be less than b"
+    Stop
+End If
+Set n = 1000              ← number of subintervals
+Set h = (b - a) / n       ← width of each slice
+Set area = 0
+
+If method == "LRM" then
+    Repeat for i from 0 to n-1
+        Set xi = a + i * h
+        Add f(xi) * h to area
+    End Repeat
+
+Else If method == "RRM" then
+    Repeat for i from 1 to n
+        Set xi = a + i * h
+        Add f(xi) * h to area
+    End Repeat
+
+Else If method == "MPM" then
+    Repeat for i from 0 to n-1
+        Set xi = a + (i + 0.5) * h
+        Add f(xi) * h to area
+    End Repeat
+
+Else If method == "TM" then     ← Trapezoid Method
+    Set area = f(a) + f(b)     ← first + last (counted once)
+    Repeat for i from 1 to n-1
+        Set xi = a + i * h
+        Add 2 * f(xi) to area   ← middle values counted twice
+    End Repeat
+    Multiply area by (h / 2)
+End If
+#OUTPUT
+Display "The integral of f(x) on [a, b] is: " + area 
