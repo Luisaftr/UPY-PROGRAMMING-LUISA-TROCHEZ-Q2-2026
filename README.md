@@ -28,16 +28,16 @@ STUDENT ID
 
 
 _____________________________________________________________________________________________________________________________
-\## Classwork 08 - Numerical Integration
+## Classwork 08 - Numerical Integration
 This folder contains the files for Classwork 08: Numerical Integration.
-\### Files
-\- `PPP.txt`: Complete pseudocode written in plain English.
-\- `Flowchart.png`: Flowchart image showing the iteration and decision flow.
-\- `numerical\_integration.py`: Working Python program with INPUT, PROCESS, and OUTPUT comments.
+### Files
+- `PPP.txt`: Complete pseudocode written in plain English.
+- `Flowchart.png`: Flowchart image showing the iteration and decision flow.
+- `numerical\_integration.py`: Working Python program with INPUT, PROCESS, and OUTPUT comments.
 
 
 
-\#AI DECLARATION
+#AI DECLARATION
 Nombre del estudiante: Luisa Trochez
 IA utilizada: chatgpt
 Fecha de uso: 2026-06-12
@@ -46,4 +46,22 @@ Prompt utilizado:
 Imagina que eres un docente en programación estricto cómo ves el pseudocódigo que te mandé
 Respuesta en crudo (raw):
 AI: Está bastante bien solo tuviste dos errores utiliza <- y no = y cambia tu verbo de GER a GET eso es todo estas lista para subir tu tarea
+
+
+_____________________________________________________________________________________________________________________________
+## Classwork 09 - Spanish Verb Conjugator
+
+This folder contains the files for Classwork 09: Spanish Verb Conjugator. This task represents the practice of creating a Python program that conjugates regular Spanish verbs ending in `ar`, `er`, and `ir`. It also demonstrates the use of pseudocode, flowchart design, input handling, decision structures, and iteration to generate the correct conjugations for different pronouns.
+
+## Files
+- `PPP.txt`: Complete pseudocode written in plain English, following class rules.
+- `Flowchart.png`: Flowchart image showing the iteration flow and the decision flow for the three verb modes.
+- `spanish_verb_conjugator.py`: Working Python program with # INPUT, # PROCESS, and # OUTPUT comments.
+
+# AI DECLARATION
+Nombre del estudiante: Luisa Trochez  
+IA utilizada: No utilizada  
+Fecha de uso: No aplica  
+Propósito: No se utilizó Inteligencia Artificial para la elaboración de esta actividad.  
+
 
