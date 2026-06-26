@@ -1,0 +1,26 @@
+# Spanish Verb Conjugator
+
+# INPUT
+CREATE a list called Pronouns
+Pronouns ← ["Yo", "Tu", "El", "Nosotros", "Vosotros", "Ellos"]
+
+CREATE a table called Endings
+Endings["ar"] ← ["o", "as", "a", "amos", "ais", "an"]
+Endings["er"] ← ["o", "es", "e", "emos", "eis", "en"]
+Endings["ir"] ← ["o", "es", "e", "imos", "is", "en"]
+
+DISPLAY "Write a Spanish verb (ar/er/ir):"
+READ Verb
+
+# PROCESS
+Stem ← Verb without the last two letters
+Ending ← last two letters of Verb
+
+Conjugations ← Endings[Ending]
+
+FOR each position from 0 to 5
+    DISPLAY Pronouns[position] + " " + Stem + Conjugations[position]
+END FOR
+
+# OUTPUT
+DISPLAY the six conjugated forms of the verb
