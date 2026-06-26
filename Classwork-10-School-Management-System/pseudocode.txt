@@ -1,0 +1,77 @@
+#CLASSWORK 10
+
+# LIST _________________________________________________________________________
+Users list				#(dictionary )given by the teacher (students, teacher, coordinator)
+Subjects list 				#(tuple )given by the teacher 
+Notes of the students list 		#given by the teacher 
+
+#LOGIN
+_________________________________________________________________________
+SET logged_in = False
+WHILE logged_in is False:
+    Print "School Management System"
+    Ask for username
+    Ask for password
+
+    IF username exists in users AND password is correct:
+        SET logged_in = True
+        Save role and name
+        Print "Welcome, [name] ([role])"
+    
+    (if wrong, the while loop starts over automatically)
+
+
+#MENU ROL STUDENT
+_________________________________________________________________________
+IF role == "student":
+    Print "Report Card: [name]"
+    Create empty set: aprobadas
+    Create empty set: pendientes
+
+    FOR EACH subject IN subjects:
+        Get student grade
+        Print "subject: grade"
+
+        IF grade >= 8.0:
+            Add subject to aprobadas
+        ELSE:
+            Add subject to pendientes
+
+    Print aprobadas
+    Print pendientes
+
+
+# MENU TEACHER
+_________________________________________________________________________
+IF role == "professor":
+    Print list of students
+
+    Ask for username of student to edit
+
+    IF student exists:
+        Print list of subjects
+        Ask for subject name
+
+        IF subject exists:
+            Ask for new grade
+            Update notes[student][subject] = new grade
+            Print "Grade updated"
+        ELSE:
+            Print "Subject not found"
+    ELSE:
+        Print "Student not found"
+
+# MENU COORDINADIOR
+_________________________________________________________________________
+IF role == "coordinator":
+    Print professor name 		#set as jpedrozo (in the list)
+    FOR EACH subject IN subjects:
+        Print subject
+
+    FOR EACH student IN notes:
+        Print student name
+
+        FOR EACH subject IN subjects:
+            Print "subject: grade"
+
+END 
