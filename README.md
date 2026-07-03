@@ -60,9 +60,7 @@ This folder contains the files for Classwork 09: Spanish Verb Conjugator. This t
 
 # AI DECLARATION
 Nombre del estudiante: Luisa Trochez  
-IA utilizada: No utilizada  
-Fecha de uso: No aplica  
-Propósito: No se utilizó Inteligencia Artificial para la elaboración de esta actividad.  
+IA utilizada: No utilizada   
 
 _____________________________________________________________________________________________________________________________
 ##Classwork 10 - School Management System
@@ -83,6 +81,24 @@ Propósito: This work was checked by AI to receive minor correction suggestions 
 Prompt utilizado: Revisa mi código de School Management System y dime si hay errores pequeños de formato, nombres o presentación. No hagas el trabajo por mí, solo dime qué puedo corregir.
 
 Respuesta en crudo (raw): AI: Te sugiero agregar saltos de línea para que la salida se vea más ordenada. También cambia nombres como `english2` a `English II`, ya que puede verse como un error de escritura o de formato. Fuera de eso, la estructura general está bien y solo necesitas cuidar que los nombres sean consistentes en todo el programa.
+
+
+
+## Classwork 11 - The Mandelbrot Set
+This folder contains the files for Classwork 11: The Mandelbrot Set. This task represents the practice of creating a Python program that applies iteration and mathematical operations to generate data related to the Mandelbrot Set. It demonstrates the use of loops, conditional structures, configuration values, calculations, and CSV output to represent the behavior of points in the Mandelbrot Set.
+
+### Files
+- `PPP.txt`: Complete pseudocode written in plain English, following class rules.
+- `Flowchart.png`: Flowchart image showing the iteration flow and decision process used in the Mandelbrot Set algorithm.
+- `mandelbrot_set_math.py`: Working Python program with # INPUT, # PROCESS, and # OUTPUT comments.
+
+# AI DECLARATION
+Nombre del estudiante: Luisa Trochez  
+IA utilizada: No utilizada  
+Herramienta adicional utilizada: PSeInt  
+Propósito de la herramienta adicional: PSeInt fue utilizado únicamente para apoyar la creación del flowchart correspondiente al archivo `Flowchart.png`.
+
+
 
 
 
