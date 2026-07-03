@@ -1,0 +1,51 @@
+#INPUT
+config ← empty table     # We need an empty table configuration to start
+
+OPEN "config.txt" FOR reading     # Now we open the file
+
+#PROCESS
+FOR each line in "config.txt" DO
+    # Separate the parameter name and its value
+    parameter ← text before "="
+    value ← text after "="
+
+   
+    config[parameter] ← value      # Store the value in the  table
+END FOR
+
+CLOSE "config.txt"
+
+width ← config["ancho"]
+height ← config["alto"]
+max_iter ← config["max_iter"]
+
+OPEN "mandelbrot.csv" FOR writing
+WRITE "row,column,iterations"
+FOR row ← 0 TO height - 1 DO
+
+    FOR column ← 0 TO width - 1 DO
+
+        real ← config["real_min"] + (column / width) * (config["real_max"] - config["real_min"])  #REAL
+        imag ← config["imag_min"] + (row / height) * (config["imag_max"] - config["imag_min"])    #IAMGINARY
+
+        zr ← 0
+        zi ← 0
+        iterations ← 0
+
+        WHILE (zr * zr + zi * zi <= 4) AND (iterations < max_iter) DO
+
+            temp_zr ← zr * zr - zi * zi + real
+            zi ← 2 * zr * zi + imag
+
+            zr ← temp_zr    #Update
+
+            iterations ← iterations + 1
+
+        END WHILE
+#OUTPUT
+        WRITE row, column, iterations
+
+    END FOR
+END FOR
+
+CLOSE "mandelbrot.csv"    #Always close the file at the end 
