@@ -1,0 +1,79 @@
+# Classwork 12 - The Mandelbrot Set Visualization
+
+
+
+_____________________________________________________________________________________________________________________________-
+# INPUT
+# The program needs two files: 1. config.txt with the image information and 2. mandelbrot.csv with the Mandelbrot data
+
+CREATE empty dictionary config
+
+OPEN "config.txt" for reading
+
+FOR each line in the file
+SPLIT the line using "="
+SAVE the first part as the name
+SAVE the second part as the value
+
+```
+IF the value has a decimal point THEN
+    CONVERT the value to a decimal number
+ELSE
+    CONVERT the value to a whole number
+END IF
+
+SAVE the name and value inside config
+```
+
+END FOR
+
+CLOSE "config.txt"
+
+SET max_iterations ← config value for "max_iter"
+SET width ← config value for "ancho"
+SET height ← config value for "alto"
+
+OPEN "mandelbrot.csv" for reading
+READ all lines
+CLOSE "mandelbrot.csv"
+
+REMOVE the first line because it is only the header
+
+_______________________________________________________________________________________-
+
+# PROCESS
+
+CREATE a new image with width and height
+
+FOR each line in the Mandelbrot data
+SPLIT the line using ","
+SAVE the values as row, column, and iterations
+
+```
+CONVERT row to a whole number
+CONVERT column to a whole number
+CONVERT iterations to a whole number
+
+IF iterations is equal to max_iterations THEN
+    SET brightness ← 0
+ELSE
+    SET brightness ← iterations divided by max_iterations
+    SET brightness ← brightness multiplied by 255
+    CONVERT brightness to a whole number
+END IF
+
+SET the pixel at column and row using the brightness value
+```
+
+END FOR
+CONVERT the image to RGB format
+
+
+__________________________________________________________________________________-
+
+# OUTPUT
+SAVE the image as "mandelbrot.png"
+
+DISPLAY "DONE"
+
+END
