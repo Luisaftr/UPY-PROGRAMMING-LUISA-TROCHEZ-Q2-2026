@@ -1,29 +1,33 @@
-Mi programa de Creador de contraseñas by Luisa Trochez
-Password Generator and Reminder App
+## GitHub Coursework Repository by Luisa Trochez
 
-Description
-Password Generator and Reminder App is a Python program that helps users create secure passwords. Users can generate random passwords or create passwords based on words they choose. The program also includes reminder notes and surveys to make it more useful and interactive.
+Programming Tasks and Classwork Repository
 
-Objective
-The objective of this program is to help users create strong passwords, organize reminder notes, and participate in simple surveys while improving security and productivity.
+## Description
 
-How It Works
-The user chooses whether to generate a random password or create one using custom words.
-The program generates and displays the password.
-The user can save reminder notes.
-The user can access and manage their notes.
-The user can complete surveys included in the program.
-The program provides an easy-to-use interface for password creation and organization.
+This repository was created to organize and collect my programming classwork assignments using GitHub. It represents my first practice with repository management, folder organization, file uploading, commits, and basic documentation through README files.
 
-Technologies Used
-Python
-Git
-GitHub
+The purpose of this repository is not to present one single project, but to build a structured base where each classwork folder contains the required files for different programming activities.
 
-Author
-Luisa Trochez
+### Objective
 
-STUDENT ID
+The objective of this repository is to practice using GitHub as a tool for academic work, version control, and project organization. It helps me keep my programming assignments organized while learning how to create folders, upload files, write README descriptions, and submit repository links correctly.
+
+### How It Works
+
+Each classwork assignment is stored inside its own folder. Every folder contains the files requested by the teacher, such as Python programs, pseudocode files, flowcharts, or documentation. The repository is updated as new classwork activities are completed. Each activity includes a short description and an AI declaration when required.
+
+### Technologies Used
+
+- Python
+- Git
+- GitHub
+- Markdown
+- AI
+
+### Author
+Luisa F. Trochez Rodriguez
+
+### Student ID
 250920s
 
 
