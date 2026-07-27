@@ -1,0 +1,310 @@
+CLASSWORK 16 - RECURSIVE FUNCTIONS
+Student: Luisa Trochez
+File: recursive_functions_luisatrochez_ppp.txt
+
+____________________________________________________________________
+
+1. COUNTDOWN
+
+INPUT
+- Get n as an integer.
+
+PROCESS
+- Start the recursive function countdown with n.
+- Check if n is an integer.
+- If n is not an integer:
+    - Display an error message.
+    - Return no value.
+- Check if n is negative.
+- If n is negative:
+    - Display an error message.
+    - Return no value.
+- If n is equal to 0:
+    - Return "Done!"
+- Otherwise:
+    - Display n.
+    - Call the countdown function again using n - 1.
+
+OUTPUT
+- Display every number from n down to 1.
+- Return "Done!" when n reaches 0.
+- Display an error message when the input is invalid.
+
+START
+- Call countdown with the desired value of n.
+END
+
+____________________________________________________________________
+
+2. FIBONACCI
+
+INPUT
+- Get n as an integer.
+
+PROCESS
+- Start the recursive Fibonacci function with n.
+- Check if n is an integer.
+- If n is not an integer:
+    - Display an error message.
+    - Return no value.
+- Check if n is negative.
+- If n is negative:
+    - Display an error message.
+    - Return no value.
+- If n is equal to 0 or 1:
+    - Return n.
+- Otherwise:
+    - Call Fibonacci using n - 1.
+    - Call Fibonacci using n - 2.
+    - Add both returned values.
+    - Return the result.
+
+OUTPUT
+- Return the Fibonacci number at position n.
+- Display an error message when the input is invalid.
+
+START
+- Call Fibonacci with the desired value of n.
+END
+
+____________________________________________________________________
+
+3. FACTORIAL
+
+INPUT
+- Get n as an integer.
+
+PROCESS
+- Start the recursive factorial function with n.
+- Check if n is an integer.
+- If n is not an integer:
+    - Display an error message.
+    - Return no value.
+- Check if n is negative.
+- If n is negative:
+    - Display an error message.
+    - Return no value.
+- If n is equal to 0 or 1:
+    - Return 1.
+- Otherwise:
+    - Call factorial using n - 1.
+    - Multiply the returned value by n.
+    - Return the result.
+
+OUTPUT
+- Return the factorial of n.
+- Display an error message when the input is invalid.
+
+START
+- Call factorial with the desired value of n.
+END
+
+____________________________________________________________________
+
+4. RECURSIVE MULTIPLICATION
+
+INPUT
+- Get n as an integer.
+- Get m as an integer.
+
+PROCESS
+- Start the recursive multiplication function with n and m.
+- Check if n and m are integers.
+- If either value is not an integer:
+    - Display an error message.
+    - Return no value.
+- Check if m is negative.
+- If m is negative:
+    - Display an error message.
+    - Return no value.
+- If m is equal to 0:
+    - Return 0.
+- Otherwise:
+    - Call recursive multiplication using n and m - 1.
+    - Add n to the returned value.
+    - Return the result.
+
+OUTPUT
+- Return the result of n multiplied by m.
+- Display an error message when the input is invalid.
+
+START
+- Call recursive multiplication with the desired values of n and m.
+END
+
+____________________________________________________________________
+
+5. RECURSIVE INTEGER DIVISION
+
+INPUT
+- Get dividend as an integer.
+- Get divisor as an integer.
+
+PROCESS
+- Start the recursive integer division function with dividend and divisor.
+- Check if dividend and divisor are integers.
+- If either value is not an integer:
+    - Display an error message.
+    - Return no value.
+- Check if divisor is equal to 0.
+- If divisor is equal to 0:
+    - Display a division-by-zero error message.
+    - Return no value.
+- Check if dividend is negative.
+- If dividend is negative:
+    - Display an error message.
+    - Return no value.
+- If dividend - divisor is less than 0:
+    - Return 0.
+- Otherwise:
+    - Call recursive integer division using dividend - divisor and divisor.
+    - Add 1 to the returned value.
+    - Return the result.
+
+OUTPUT
+- Return the integer quotient of dividend divided by divisor.
+- Display an error message when the input is invalid.
+
+START
+- Call recursive integer division with the desired dividend and divisor.
+END
+
+____________________________________________________________________
+
+6. RECURSIVE POWER
+
+INPUT
+- Get base as an integer or decimal number.
+- Get exponent as an integer.
+
+PROCESS
+- Start the recursive power function with base and exponent.
+- Check if base is a number and exponent is an integer.
+- If the values have invalid types:
+    - Display an error message.
+    - Return no value.
+- Check if exponent is negative.
+- If exponent is negative:
+    - Display an error message.
+    - Return no value.
+- If exponent is equal to 0:
+    - Return 1.
+- Otherwise:
+    - Call recursive power using base and exponent - 1.
+    - Multiply the returned value by base.
+    - Return the result.
+
+OUTPUT
+- Return base raised to the power of exponent.
+- Display an error message when the input is invalid.
+
+START
+- Call recursive power with the desired base and exponent.
+END
+
+____________________________________________________________________
+
+7. COLLATZ SERIES
+
+INPUT
+- Get n as an integer greater than 0.
+
+PROCESS
+- Start the recursive Collatz function with n.
+- Check if n is an integer.
+- If n is not an integer:
+    - Display an error message.
+    - Return no value.
+- Check if n is less than or equal to 0.
+- If n is less than or equal to 0:
+    - Display an error message.
+    - Return no value.
+- If n is equal to 1:
+    - Display "END!"
+    - Return 0.
+- Otherwise:
+    - Check if n is even.
+    - If n is even:
+        - Calculate n / 2 using integer division.
+        - Display the result.
+        - Call the Collatz function again using the result.
+    - If n is odd:
+        - Calculate 3 * n + 1.
+        - Display the result.
+        - Call the Collatz function again using the result.
+
+OUTPUT
+- Display every value generated by the Collatz sequence.
+- Display "END!" when the sequence reaches 1.
+- Display an error message when the input is invalid.
+
+START
+- Call the Collatz function with the desired value of n.
+END
+
+____________________________________________________________________
+
+8. FLATTEN A NESTED JSON DICTIONARY
+
+INPUT
+- Get dictionary as a dictionary.
+- Get parent key as text, initially empty.
+- Get separator as text, initially ".".
+
+PROCESS
+- Start the recursive flatten JSON function.
+- Check if dictionary is a valid dictionary.
+- If it is not a dictionary:
+    - Display an error message.
+    - Return an empty dictionary.
+- Create an empty list called elements.
+- For every key and value in the dictionary:
+    - If parent key is empty:
+        - Use the current key as the new key.
+    - Otherwise:
+        - Join parent key, separator, and current key to create the new key.
+    - Check if the current value is another dictionary.
+    - If the value is a dictionary:
+        - Call the flatten JSON function again using:
+            - The nested dictionary.
+            - The new key as the parent key.
+            - The same separator.
+        - Add all returned key-value pairs to elements.
+    - Otherwise:
+        - Add the new key and its value to elements.
+- Convert elements into a dictionary.
+- Return the flattened dictionary.
+
+OUTPUT
+- Return one dictionary containing flattened keys.
+- Nested keys are joined using the separator.
+- Display an error message and return an empty dictionary when the input is invalid.
+
+START
+- Call the flatten JSON function with the desired nested dictionary.
+END
+
+____________________________________________________________________
+
+TESTING
+
+INPUT
+- Use valid and invalid test values for every function.
+
+PROCESS
+- Run countdown with valid, negative, and non-integer values.
+- Run Fibonacci with valid and negative values.
+- Run factorial with valid and decimal values.
+- Run recursive multiplication with valid and negative values.
+- Run recursive integer division with valid values and a zero divisor.
+- Run recursive power with valid and negative exponents.
+- Run the Collatz series with valid and zero values.
+- Run flatten JSON with a nested dictionary and an invalid list.
+
+OUTPUT
+- Display each valid result.
+- Display the corresponding error message for every invalid test.
+
+START
+- Execute all test calls.
+END
